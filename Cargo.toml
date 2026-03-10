@@ -1,0 +1,16 @@
+[package]
+name = "hep"
+version = "9.0.0"
+edition = "2021"
+description = "hep — version control. 92 commands. competing with bro (1 command)."
+
+[[bin]]
+name = "hep"
+path = "src/main.rs"
+
+[dependencies]
+flate2 = "1.0"          # zlib compression for object store
+sha1 = "0.10"           # SHA1 for content addressing
+hex = "0.4"             # hex encoding/decoding
+walkdir = "2"           # recursive directory walking
+chrono = "0.4"          # date/time formatting
